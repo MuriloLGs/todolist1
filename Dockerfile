@@ -12,7 +12,7 @@ FROM openjdk:17-jdk-slim
 
 WORKDIR /app
 
-COPY --from=build /app/target/todolist1-1.0.0.jar app.jar
+COPY --from=build /target/todolist1-1.0.0.jar app.jar
 
 EXPOSE 8080
 
